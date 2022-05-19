@@ -1,0 +1,64 @@
+.app {
+  width: 820px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 40px;
+  position: relative;
+  > li {
+    margin-right: 40px;
+    width: 38px;
+    text-align: center;
+    > a {
+      font-size: 16px;
+      line-height: 32px;
+      height: 32px;
+      display: inline-block;
+    }
+    &:hover {
+      > a {
+        color: blue;
+        border-bottom: 1px solid red;
+      }
+      > .layer {
+        height: 132px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.layer {
+  width: 1240px;
+  background-color: blue;
+  position: absolute;
+  left: -200px;
+  top: 56px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  box-shadow: 0 0 5px #ccc;
+  transition: all 0.2s 0.1s;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    align-items: center;
+    height: 124px;
+    li {
+      width: 110px;
+      text-align: center;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      p {
+        padding-top: 10px;
+      }
+      &:hover {
+        p {
+          color: red;
+        }
+      }
+    }
+  }
+}

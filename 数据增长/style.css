@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8e44ad;
+    color: white;
+    gap: 100px;
+}
+
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+}
+
+.counter-container i{
+    font-size: 50px;
+
+}
+.counter-container .conuter{
+    font-size: 30px;
+    letter-spacing: 3px;
+    
+}
+.counter-container span{
+    font-size: 15px;
+    letter-spacing: 5px;
+}
